@@ -3,6 +3,8 @@ package lgtm
 import (
 	"io"
 	"net/url"
+
+	"github.com/ss49919201/lgtm-repo/backend/domain/user"
 )
 
 type LGTM struct {
@@ -10,5 +12,6 @@ type LGTM struct {
 }
 
 type LGTMImage struct {
-	Image io.Reader
+	UserID user.UserID
+	Image  io.Reader
 }
